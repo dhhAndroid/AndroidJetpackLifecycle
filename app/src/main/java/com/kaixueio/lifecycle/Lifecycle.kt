@@ -1,11 +1,11 @@
 package com.kaixueio.lifecycle
 
 
-abstract class Lifecycle {
+interface Lifecycle {
 
-    abstract fun addObserver(observer: LifecycleObserver)
+    fun addObserver(observer: LifecycleObserver)
 
-    abstract fun removeObserver(observer: LifecycleObserver)
+    fun removeObserver(observer: LifecycleObserver)
 
     enum class Event {
         /**
